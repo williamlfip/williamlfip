@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>IESO Monitoring Dashboard</title>
+  <style>
+    body { 
+      margin: 0; 
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+    }
+    .xml-iframe { 
+      width: 100%; 
+      height: 50vh; 
+      border: none; 
+    }
+    .bottom-container {
+      width: 100%;
+      height: 50vh;
+      display: flex;
+      flex-direction: row;
+    }
+    .bottom-iframe {
+      width: 50%;
+      height: 100%;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <iframe class="xml-iframe" src="https://reports-public.ieso.ca/public/TxLimitsOutage0to2Days/PUB_TxLimitsOutage0to2Days.xml"></iframe>
+  <div class="bottom-container">
+    <iframe class="bottom-iframe" src="https://www.ieso.ca/Sector-Participants/RSS-Feeds/Day-0-Advisory-Notices-Summary"></iframe>
+    <iframe class="bottom-iframe" src="https://www.ieso.ca/sector-participants/rss-feeds/day-1-to-34-advisory-notices-summary"></iframe>
+  </div>
+</body>
+</html>
